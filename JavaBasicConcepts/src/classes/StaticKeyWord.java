@@ -16,6 +16,7 @@ public class StaticKeyWord {
 		
 		Counter one = new Counter();
 		Counter two = new Counter();
+		Counter.count = 5;
 		
 		System.out.println("total counter : " + Counter.count);
 		

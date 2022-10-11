@@ -12,24 +12,29 @@ public class Strings {
 		
 		
 		a.append("Abd");
+		a.append("x");
 		System.out.println(a);
+		
 		
 		a.insert(2,"c"); // insert this at 2th pos.
-		System.out.println(a);
+		System.out.println("insert = " + a);
+		
+		a.insert(5,"c");
+		System.out.println("insert = " +  a);
 		
 		a.replace(2, 4, "x"); 
-		System.out.println(a);
+		System.out.println("replace = " + a);
 		
 		a.delete(1, 2); 
-		System.out.println(a);
+		System.out.println("delete = " + a);
 		
 		a.reverse();
-		System.out.println(a);
+		System.out.println("reverse = " + a);
 		
-		System.out.println(a.capacity());
+		System.out.println("capactiy = " + a.capacity());
 		
 		a.append("cdefghijklqwerd");
-		System.out.println(a.capacity());
+		System.out.println("capacity after appending = " + a.capacity());
 		
 		
 	}

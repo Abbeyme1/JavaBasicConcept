@@ -16,6 +16,11 @@ public class StaticBlock {
 
 class Test {
 	
+	// java copies this to to constructor
+	{
+		System.out.println("static block 0");
+	}
+	
 	static {
 		System.out.println("static block 1");
 	}

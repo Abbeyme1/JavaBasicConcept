@@ -8,6 +8,10 @@ public class VariableArguements {
 		
 		print(3, "Abhay","Akshay","John");
 		
+		
+		int a = 55_88;
+		System.out.println(a);
+		
 	}
 	
 	

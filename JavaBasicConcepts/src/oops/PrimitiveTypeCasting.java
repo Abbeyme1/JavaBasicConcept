@@ -21,6 +21,12 @@ public class PrimitiveTypeCasting {
 		System.out.println(d + " "+ i);
 		
 		
+		int m = 6;
+		float f = m;
+		
+		System.out.println(m + " " +f);
+		
+		
 		
 		
 	}

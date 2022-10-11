@@ -7,6 +7,7 @@ public class Inheritance {
 		
 		Trek trek = new Trek(50, 5, 1, "red");
 		
+		
 		System.out.println(trek.getColor());
 		
 		

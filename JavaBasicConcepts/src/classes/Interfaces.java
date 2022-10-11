@@ -1,6 +1,8 @@
 package classes;
 
 public class Interfaces {
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,8 +17,15 @@ public class Interfaces {
 		System.out.println(human.countOfEyes); 
 		
 		
-		Student s = new Student();
-		s.read();
+//		Student s = new Student();
+//		s.read();
+		
+		Bank.announcement();
+		
+		
+		
+		
+		
 
 	}
 
@@ -24,7 +33,12 @@ public class Interfaces {
 
 
 interface Bank {
-
+	
+	
+	static void announcement() {
+		System.out.println("important announcement: ");
+	}
+	
 	void rateOfInterest();
 }
 
@@ -61,6 +75,7 @@ interface human extends Runnable, Walkable {
 	}
 }
 
+
 class boy implements human {
 
 	@Override
@@ -82,21 +97,14 @@ class boy implements human {
 }
 
 
-class Student implements human.Readable {
-
-	@Override
-	public void read() {
-		// TODO Auto-generated method stub
-		System.out.println("Reading...");
-		
-	}
-	
-}
-
-
-
-
-
-
-
+//class Student implements human.Readable {
+//
+//	@Override
+//	public void read() {
+//		// TODO Auto-generated method stub
+//		System.out.println("Reading...");
+//		
+//	}
+//	
+//}
 

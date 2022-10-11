@@ -9,6 +9,7 @@ public class Operators {
 		
 		int num = 5; // simple
 		num += 8; // compound
+		String s = "abcd" + "mcop";
 		
 		
 		// relational
@@ -33,7 +34,7 @@ public class Operators {
 		c = a * b;
 		c = a % b;
 		
-		
+		System.out.println(5 % 1);
 		// Increament and Decreement Operator
 		
 		a++;
