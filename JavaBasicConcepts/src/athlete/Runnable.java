@@ -1,5 +1,5 @@
 package athlete;
 
-public interface runnable {
+public interface Runnable {
 	void run();
 }

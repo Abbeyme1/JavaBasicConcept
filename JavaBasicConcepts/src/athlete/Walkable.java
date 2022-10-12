@@ -1,6 +1,6 @@
 package athlete;
 
-public interface walkable {
+public interface Walkable {
 
 	void walk();
 }

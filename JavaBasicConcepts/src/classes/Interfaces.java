@@ -20,7 +20,7 @@ public class Interfaces {
 //		Student s = new Student();
 //		s.read();
 		
-		Bank.announcement();
+//		Bank.announcement();
 		
 		
 		
@@ -35,9 +35,7 @@ public class Interfaces {
 interface Bank {
 	
 	
-	static void announcement() {
-		System.out.println("important announcement: ");
-	}
+	void announcement();
 	
 	void rateOfInterest();
 }
@@ -48,6 +46,12 @@ class Axis implements Bank {
 	@Override
 	public void rateOfInterest() {
 		System.out.println("7.5%");
+	}
+
+	@Override
+	public void announcement() {
+		// TODO Auto-generated method stub
+		
 	}
 }
 

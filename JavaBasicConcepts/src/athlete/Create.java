@@ -2,9 +2,19 @@ package athlete;
 
 import java.util.Scanner;
 
+import org.junit.Test;
 
-public class create {
 
+public class Create {
+
+	@Test
+	public void a()
+	{
+		System.out.println("yes");
+		
+	}
+	
+	
 	public static void createAthlete() {
 		
 		Scanner sc = new Scanner(System.in);
@@ -22,20 +32,23 @@ public class create {
 		option = sc.nextInt();
 		
 		
-		athlete athlete = null;
+//		Runner athlete = null;
+		Runner runner = null;
+		Swimmer swimmer = null;
 		
 		
 		switch(option)
 		{
 		case 1:  {
-			athlete = new Runner(name); 
+			
+			runner = new Runner(name); 
 			
 			System.out.println("Runner created");  
 			break; 
 			}
 		
 		case 2:  {
-			athlete = new Swimmer(name); 
+			swimmer = new Swimmer(name); 
 			System.out.println("Swimmer created");
 			break; 
 			}
@@ -48,10 +61,14 @@ public class create {
 		
 	
 		
-		athlete.printInfo();
-		athlete.walk();
-		athlete.longJump();
-		((Runner) athlete).runnerRuns();
+//		athlete.printInfo();
+//		athlete.walk();
+//		athlete.longJump();
+//		((Runner) athlete).runnerRuns();
+		
+		
+//		Runner r = new athlete();
+		
 		
 	}
 	public static void main(String[] args) {

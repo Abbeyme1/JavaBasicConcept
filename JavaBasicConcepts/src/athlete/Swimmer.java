@@ -1,6 +1,6 @@
 package athlete;
 
-public class Swimmer extends athlete {
+public class Swimmer extends AbstractAthlete {
 
 	public Swimmer(String name) {
 		super(name);

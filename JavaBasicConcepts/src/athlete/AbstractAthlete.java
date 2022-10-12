@@ -1,12 +1,8 @@
 package athlete;
 
-public class Human implements Walkable, Runnable{
+abstract class AbstractAthlete implements Walkable, Runnable  {
 	
 	private String name;
-	
-	public Human(String name) {
-		setName(name);
-	}
 	
 	public void walk () {
 		System.out.println("walking");
@@ -26,6 +22,16 @@ public class Human implements Walkable, Runnable{
 	}
 	
 	public void printInfo() {
-		System.out.println("Name: "+  name);
+		
 	}
+	public AbstractAthlete(String name) {
+		setName(name);
+	}
+
+	void jog() {
+		System.out.println("jogging");
+	}
+	
+	abstract void longJump();
+	
 }

@@ -1,6 +1,6 @@
 package athlete;
 
-public class Runner extends athlete {
+public class Runner extends AbstractAthlete {
 
 	public Runner(String name) {
 		super(name);

@@ -1,9 +1,7 @@
 package exceptions;
 
 import java.io.FileNotFoundException;
-
-
-
+import java.io.IOException;
 
 public class CauseOfException {
 
@@ -13,11 +11,18 @@ public class CauseOfException {
 		
 		try {
 //			div();
-			divide();
+//			divide();
 //			divide2();
+			
+//			readFile();
+			
+			
+			driveCar();
 		}
-		catch (Throwable e) {
-			System.out.println("cause : " + e.getCause());
+		catch (Exception e) {
+			
+			System.out.println("cause : "+ e);
+			System.out.println("caused : " + e.getCause());
 			
 		}
 
@@ -64,21 +69,59 @@ public class CauseOfException {
 	}
 	
 	
-	public static void readFile() throws FileNotFoundException
+	public static void readFile() throws Exception
 	{
 		try
 		{
-			throw new FileNotFoundException();
+			throw new ArithmeticException();
 		}
-		catch(FileNotFoundException e)
+		catch(Throwable e)
 		{
-			FileNotFoundException f = new FileNotFoundException();
-			f.initCause(e);
 			
-			throw f;
+			Exception ee = new Exception("0/0 ");
+			ee.initCause(e);
+
+			throw ee;
 			
 		}
 	}
 	
+	
+	public static void driveCar() throws Exception{
+		
+		try {
+			
+			throw new FlatTireException("punctured");
+			
+		}
+		catch(Exception e)
+		{
+			CarNotMovingException h = new CarNotMovingException("car stopped");
+			
+			h.initCause(e);
+			
+			throw h;
+		}
+	}
+}
+
+
+
+class FlatTireException extends Exception{
+	
+	public FlatTireException(String message)
+	{
+		super(message);
+		
+	}
+}
+
+class CarNotMovingException extends Exception{
+	
+	public CarNotMovingException(String message)
+	{
+		super(message);
+		
+	}
 }
 
