@@ -32,7 +32,9 @@ public class Create {
 		option = sc.nextInt();
 		
 		
-//		Runner athlete = null;
+		AbstractAthlete athlete = null;
+		
+		
 		Runner runner = null;
 		Swimmer swimmer = null;
 		
@@ -41,14 +43,15 @@ public class Create {
 		{
 		case 1:  {
 			
-			runner = new Runner(name); 
+			athlete = new Runner(name); 
+			
 			
 			System.out.println("Runner created");  
 			break; 
 			}
 		
 		case 2:  {
-			swimmer = new Swimmer(name); 
+			athlete = new Swimmer(name); 
 			System.out.println("Swimmer created");
 			break; 
 			}
@@ -64,7 +67,8 @@ public class Create {
 //		athlete.printInfo();
 //		athlete.walk();
 //		athlete.longJump();
-//		((Runner) athlete).runnerRuns();
+		
+		((Runner) athlete).runnerRuns();
 		
 		
 //		Runner r = new athlete();

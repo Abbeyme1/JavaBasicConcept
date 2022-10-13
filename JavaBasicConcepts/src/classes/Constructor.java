@@ -16,4 +16,3 @@ public class Constructor {
 	
 
 }
-//add a new student to class 

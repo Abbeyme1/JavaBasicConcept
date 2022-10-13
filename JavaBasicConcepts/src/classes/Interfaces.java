@@ -10,11 +10,11 @@ public class Interfaces {
 		Axis axis = new Axis();
 		axis.rateOfInterest();
 		
-		human boy = new boy();
+		humann boy = new boyy();
 		boy.speak();
 		
 		System.out.println(boy.countOfEyes);
-		System.out.println(human.countOfEyes); 
+		System.out.println(humann.countOfEyes); 
 		
 		
 //		Student s = new Student();
@@ -69,7 +69,7 @@ interface Walkable
 	void walk();
 }
 
-interface human extends Runnable, Walkable {
+interface humann extends Runnable, Walkable {
 	
 	int countOfEyes = 2;
 	void speak();
@@ -80,7 +80,7 @@ interface human extends Runnable, Walkable {
 }
 
 
-class boy implements human {
+class boyy implements humann {
 
 	@Override
 	public void walk() {
