@@ -38,6 +38,7 @@ public class Polymorphism {
 		try {
 			a.catchh(new Toy());
 			a.catchh("teddy");
+//			a.catchh(b);
 		}
 		catch(Exception e)
 		{
@@ -123,7 +124,7 @@ class Animal {
 	}
 	
 	// object polymorphism
-	public void catchh(Object obj) throws BadAnimal
+	public <T> void catchh(T obj) throws BadAnimal
 	{
 		if(obj instanceof Animal)
 		{

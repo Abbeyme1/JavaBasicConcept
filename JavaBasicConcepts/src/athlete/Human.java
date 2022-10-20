@@ -1,7 +1,7 @@
 package athlete;
 
 public class Human implements Walkable, Runnable{
-	
+
 	private String name;
 	
 	public Human(String name) {
