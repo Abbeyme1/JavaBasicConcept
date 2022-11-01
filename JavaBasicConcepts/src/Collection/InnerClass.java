@@ -1,13 +1,15 @@
 package Collection;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 public class InnerClass {
 	
 	int x = 0;
 
+	// nested inner class
     class InnerClasss {
     	
+    	// can't have any static members
+    	
+    	int v;
     	int x;
         void accessMembers(int x) {
             this.x = x;
@@ -17,17 +19,71 @@ public class InnerClass {
     }
 
     
+    public static void method()
+    {
+    	
+    	class MethodClass {}
+    	
+    	
+    	MethodClass m = new MethodClass();
+    	
+    }
+    
 	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+		InnerClass.InnerClasss is = new InnerClass().new InnerClasss(); 
+		
+	
 		Pairr p = new Pairr(10);
 		p.print();
+		
+		
+		Animall d = new Animall() {
+			
+			public void makeNoise()
+			{
+				System.out.println("yes");
+			}
+			
+			
+		};
+
+		Car c = new Car() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			
+		};
+		
+		
+		System.out.println(c.getClass());
+		System.out.println(d.getClass());
 
 		
 	}
 
+}
+
+
+interface Car {
+	
+	public void run();
+}
+
+class Animall {
+	
+	public void makeNoise()
+	{
+		
+	}
 }
 
 

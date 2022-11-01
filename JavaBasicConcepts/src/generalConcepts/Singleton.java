@@ -49,6 +49,6 @@ final class K {
 }
 
 
-class B extends K {
-	
-}
+//class B extends K {
+//	
+//}

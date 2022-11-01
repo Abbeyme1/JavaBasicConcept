@@ -40,8 +40,6 @@ public class Streamm {
 		List<Integer> square = l.stream().map(e -> e*e).sorted().collect(Collectors.toList());
 		System.out.println(square);
 		
-		
-		
 		List<String> namesA = Stream.of(names).filter(e -> e.charAt(0) == 'A').collect(Collectors.toList());
 		System.out.println(namesA);
 		 

@@ -7,9 +7,9 @@ public class Arrays {
 
 		int[] arr;
 		
-		int[] arr2 = new int[5];
+		int[] arr2 = new int[5];  // dimension expression
 		
-		int[] arr3 = {1,2,3};
+		int[] arr3 = {1,2,3};// array initializer
 	}
 
 }

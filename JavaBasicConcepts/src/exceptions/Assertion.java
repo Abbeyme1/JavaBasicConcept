@@ -17,8 +17,8 @@ public class Assertion {
 		
 		
 		int v = multiply(2,3);
-//		assert 2*3 == v ;
-//		assert 2*3 == v : "Wrong output";
+		assert 2*3 == v ;
+		assert 2*3 == v : "Wrong output";
 		
 		
 		int[] arr = {2,89,85,12,66,7,1};
