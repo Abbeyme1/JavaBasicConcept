@@ -1,5 +1,6 @@
 package classes;
 
+
 public class Interfaces {
 	
 	
@@ -22,7 +23,10 @@ public class Interfaces {
 		
 //		Bank.announcement();
 		
+		P d = new P();
+		d.a();
 		
+	
 		
 		
 		
@@ -111,4 +115,35 @@ class boyy implements humann {
 //	}
 //	
 //}
+
+
+interface M
+{
+	default void a() {
+		System.out.println("M");
+	};
+}
+
+interface N
+{
+	default void a() {
+		System.out.println("N");
+	};
+}
+
+class O implements M,N {
+
+	@Override
+	public void a() {
+		// TODO Auto-generated method stub
+		System.out.println("O");
+	}
+	
+}
+
+
+class P extends O implements M {
+	
+	
+}
 

@@ -2,6 +2,7 @@ package Collection;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.swing.event.InternalFrameListener;
@@ -33,6 +34,48 @@ public class Generics {
 		
 		
 		makeSound(new Dog(), new ArrayList<>());
+		
+		
+		
+		Number[] numArr = new Number[20];
+		numArr[0] = 2d;
+		numArr[1] = 6.5;
+		
+		
+		// covarience
+		Integer[] a = new Integer[6];
+		
+		Number[] numArr1 = a;
+		
+		numArr1[0] = 5.2;
+		
+		
+		List<Integer> list = new ArrayList<>();
+		
+		List<Number> numList = new ArrayList<>();
+		
+//		numList = list; // wrong
+		
+//		List<? super Integer> superList = numList; // ok
+		
+		List<? super Integer> superList = list;
+		
+		
+
+		
+		// covariece
+		List<? extends Number> nums = new ArrayList<>();
+		
+		nums.add(6);
+		
+		
+		// contravarience
+		List<? super Number> onums = new ArrayList<>();
+		
+		onums.add(6);
+		onums.add(6.5f);
+		
+		
 	}
 	
 	
